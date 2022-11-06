@@ -22,9 +22,6 @@ function reducer(state, action) {
 export default function UseReducer() {
   const [state, dispatch] = useReducer(reducer, { data: 0 })
   
-  const error = () => {
-    throw Error("This is an error")
-  }
 
   return (
     <>
